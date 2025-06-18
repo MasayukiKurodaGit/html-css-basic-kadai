@@ -1,10 +1,10 @@
 body {
   font-family: "Arial", "Meiryo", sans-serif;
+  text-align:center;
 }
 
 html{
   font-size: 20px;
-  text-align:center;
 }
 
 .blue{
@@ -30,6 +30,6 @@ html{
   border-bottom: double 3px color rgb(115,115,114);
 }
 
-#basic div {
+#basic > p{
   font-weight: bold;
 }
