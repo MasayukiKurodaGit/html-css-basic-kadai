@@ -1,0 +1,113 @@
+
+/* ベーススタイル */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* top要素のスタイル */
+#top {
+  width: 800px;
+  background-color: #dcc9f4;
+  margin: 20px auto; /* 上下に20pxの余白、左右はautoで中央配置 */
+  padding: 20px;
+  text-align: center; /* 中のテキストを中央揃え */
+  display: flex;
+  justify-content: center; /* 子要素を中央に配置 */
+  align-items: center;
+  flex-wrap: wrap; /* 必要に応じて折り返す */
+}
+
+/* top-childクラスのスタイル */
+.top-child {
+  width: 20%; /* 親要素の20%の幅 */
+  background-color: #ffd9df;
+  padding: 10px;
+  margin: 0 10px; /* 要素間の間隔を調整 */
+  display: inline-block; /* 横並びにする */
+}
+
+/* middle要素のスタイル */
+#middle {
+  width: 800px;
+  height: 800px;
+  background-color: #ffd9df;
+  margin: 20px auto; /* 上下に20pxの余白、左右はautoで中央配置 */
+  position: relative; /* 子要素の絶対配置のための基準点 */
+}
+
+/* middle-child要素の共通スタイル */
+#middle-child01,
+#middle-child02,
+#middle-child03 {
+  width: 200px;
+  height: 200px;
+  background-color: #87ceeb;
+  /* 以下は配置のための例です。必要に応じて調整してください */
+  position: absolute;
+}
+
+/* 個別の配置（例として） */
+#middle-child01 {
+  top: 100px;
+  left: 100px;
+}
+
+#middle-child02 {
+  top: 300px;
+  left: 300px;
+}
+
+#middle-child03 {
+  top: 500px;
+  left: 500px;
+}
+
+/* 残りの要素のための基本スタイル（必要に応じて） */
+#bottom {
+  width: 800px;
+  margin: 20px auto;
+}
+
+
+
+
+
+
+
+/* bottom要素のスタイル */
+#bottom {
+  width: 800px;
+  height: 300px;
+  background-color: #87ceeb;
+  margin: 20px auto;
+  position: relative; /* 子要素の配置のための基準点 */
+}
+
+/* bottom-child要素の共通スタイル */
+#bottom-child01, 
+#bottom-child02, 
+#bottom-child03 {
+  width: 400px;
+  height: 100px;
+  background-color: #e5dcf0;
+  position: relative; /* 位置調整のため */
+}
+
+/* 各要素の個別の配置 */
+#bottom-child01 {
+  /* デフォルト位置（変更なし） */
+}
+
+#bottom-child02 {
+  left: 200px; /* 本来の表示場所から左に200pxずらす */
+}
+
+#bottom-child03 {
+  left: 400px; /* 本来の表示場所から左に400pxずらす */
+}
